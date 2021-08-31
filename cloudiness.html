@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Visualization Dashboard (Latitude)</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class = "container-fluid px-md-0">
+        <div class = "row mx-md-0" style="background-color: white;">
+            <div class = "col-md-12 px-md-0">
+                <nav class="navbar navbar-expand-md justify-content-center navbar-light py-md-0 px-md-0">
+                    <div class = "container left-style mx-md-0 px-md-0">
+                        <a class="navbar-brand px-md-3" style = "color:white" 
+                            href="index.html">Latitude</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Plots</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="max_temperature.html">Max Temperature</a></li>
+                                    <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                                    <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                                    <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="comparisons.html">Comparison<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="data.html">Data</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container mt-md-5 mb-md-5">
+        <div class = "row">
+            <div class = "col-md-8 py-md-2">
+                <div class="inner-wrap">
+                    <div class = "row border-bottom mb-md-1 mt-md-4">
+                        <div class = "col-md-12">
+                            <h1 class = "fw-bolder">Cloudiness</h1>
+                        </div>
+                    </div>
+                    <article class = "row single-post mt-1 no-gutters">
+                        <div class="col-md-12 mt-md-4">                               
+                            <img src="Resources/assets/images/Fig3.png"
+                                class="image-wrapper float-center img-fluid pr-3" alt="">                           
+                            <p class = "fs.-1 fw-normal single-post-content-wrapper" style = "color:grey">
+                                The highest levels of cloudiness at 100% show up as one approaches the equator (0 Deg. Latitude)
+                                Skies are more diverse over cities in Northern Hemisphere, significant amount of them
+                                have either clear sky at 0 level of cloudiness, or cloudy sky at levels >= 80.
+                                Cities in the southern hemisphere tend to have more average cloudiness around 40%.                                   
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class = "col-md-4 py-md-2">
+                <div class="inner-wrap">
+                    <div class = "row border-bottom mb-md-1 mt-md-4">
+                        <div class = "col-md-12">
+                            <h2>Visualizations</h2>
+                        </div>
+                    </div>
+                    <div class = "row mb-md-1 mt-md-4">
+                        <div class = "col-md-6">
+                            <a href="max_temperature.html">
+                                <img src = "Resources/assets/images/Fig1.png" class = "img-fluid">
+                            </a> 
+                        </div>
+                        <div class = "col-md-6">
+                            <a href="humidity.html">
+                                <img src = "Resources/assets/images/Fig2.png" class = "img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "row mb-md-1 mt-md-4">
+                        <div class = "col-md-6">
+                            <a href="cloudiness.html">
+                                <img src = "Resources/assets/images/Fig3.png" class = "img-fluid">
+                            </a>
+                        </div>
+                        <div class = "col-md-6">
+                            <a href="wind_speed.html">
+                                <img src = "Resources/assets/images/Fig4.png" class = "img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

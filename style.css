@@ -1,0 +1,64 @@
+
+body { background-color: #e9ecef; }
+.inner-wrap {
+    padding: 15px;
+    background-color: white;}    
+
+h1 {font-size: 32px; font-weight: bolder;
+    font-family: 'Trebuchet MS';
+    color:#1EA1A1;}
+
+h2 {font-size: 26px; font-weight: bolder;
+    font-family: 'Trebuchet MS';
+    color:#1EA1A1;}
+
+h3 {font-size: 16px; font-weight: bolder;
+    font-family: 'Trebuchet MS';
+    color:#1EA1A1;}
+
+.navbar-brand {
+    font-size: 20px; font-weight: bolder;
+    font-family: 'Trebuchet MS'; background-color: #1EA1A1;
+}
+
+.nav-item, .dropdown-item {
+    font-size: 12px; font-weight:lighter;
+    font-family: 'Trebuchet MS';
+    color: gray;
+}
+
+.dropdown-menu {
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.dropdown-toggle.show {
+    background-color: #e9ecef;
+    outline: none;
+}
+
+.dropdown-toggle:hover {
+    color: white;
+}
+
+.navbar-collapse:show{
+    background-color: #1EA1A1;
+}
+
+@media (max-width: 767px){
+    .navbar-brand{
+        padding: 15px;
+    }
+    .navbar-toggler{
+        margin: 15px;
+    }
+    body{
+        background-color: white;
+    }
+    .navbar-collapse{
+        max-width: 540px;
+        
+    }
+    .left-style{
+        background-color: #1EA1A1;
+    }
+}
